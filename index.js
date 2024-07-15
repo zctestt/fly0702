@@ -1,12 +1,12 @@
 const FILE_PATH = process.env.FILE_PATH || './temp';
 const projectPageURL = process.env.URL || '';    // 填写项目域名可自动访问保活，例如：https://www.google.com
 const intervalInMilliseconds = process.env.TIME || 2 * 60 * 1000;// 自动访问间隔时间（2分钟）
-const UUID = process.env.UUID || '89c13786-25aa-4520-b2e7-12cd60fb5202';
-const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.abcd.com';  // 哪吒3个变量不全不运行
-const NEZHA_PORT = process.env.NEZHA_PORT || '5555';             // 哪吒端口为443时开启tls
+const UUID = process.env.UUID || '3d551aac-8458-4661-b15f-a3c7c3a4eecc';
+const NEZHA_SERVER = process.env.NEZHA_SERVER || '';  // 哪吒3个变量不全不运行
+const NEZHA_PORT = process.env.NEZHA_PORT || '';             // 哪吒端口为443时开启tls
 const NEZHA_KEY = process.env.NEZHA_KEY || '';                   // 哪吒客户端密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';               // 固定隧道域名，留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || '';                   // 固定隧道json或token，留空即启用临时隧道
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'fly0701.freevps.gay';               // 固定隧道域名，留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiYWIxOWUyOTcwNTgxNDI5NGVmYmE0NTllMjc5ZDQ0NzMiLCJ0IjoiN2VhZmQ3NDEtMTBlMC00Zjk4LWIwMmItZDM3NzcxNzc1NjdiIiwicyI6Ik5EQmhaREkwWm1FdFlUazFaUzAwWmpKbUxXRXdPVGd0TWpjM00yRXdPRGN4WlRZNSJ9';                   // 固定隧道json或token，留空即启用临时隧道
 const CFIP = process.env.CFIP || 'government.se';                // 优选域名或优选ip
 const CFPORT = process.env.CFPORT || 443;                        // 节点端口，一般不用改
 const NAME = process.env.NAME || 'ABCD';                         // 节点名称
